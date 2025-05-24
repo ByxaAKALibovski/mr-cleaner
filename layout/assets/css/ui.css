@@ -1,0 +1,233 @@
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+    padding: 14px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #40D5F0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    font-family: "Inter";
+    transition: 0.3s;
+
+    &:hover {
+        color: #40D5F0;
+        border-color: #40D5F0;
+        background-color: transparent;
+    }
+
+    &.active {
+        color: #40D5F0;
+        border-color: #40D5F0;
+        background-color: transparent;
+    }
+
+    &.btn__revers {
+        background-color: transparent;
+        color: #40D5F0;
+        border-color: #40D5F0;
+
+        &:hover {
+            background-color: #40D5F0;
+            color: #333;
+            border-color: transparent;
+        }
+
+        &.active {
+            background-color: #40D5F0;
+            color: #333;
+            border-color: transparent;
+        }
+    }
+
+    &.btn__light {
+        background-color: #fff;
+
+        &:hover {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        &.active {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+
+    &.btn__icon {
+        padding: 8px 23px;
+        border-radius: 25px;
+    }
+
+    &.btn__text {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid transparent;
+        color: #40D5F0;
+
+        &:hover {
+            border-color: #40D5F0;
+        }
+    }
+}
+
+.title__section {
+    font-style: normal;
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    max-width: 480px;
+    width: 100%;
+
+    &>span {
+        color: #40D5F0;
+    }
+
+    &.title__section_reverse {
+        &>span {
+            color: #fff;
+        }
+    }
+}
+
+.title__big {
+    font-style: normal;
+    font-family: "Inter";
+    font-size: 60px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    max-width: 720px;
+    width: 100%;
+}
+
+.text {
+    font-family: "Inter";
+    color: #333;
+
+    &.f20 {
+        font-size: 20px;
+    }
+
+    &.f16 {
+        font-size: 16px;
+    }
+
+    &.w500 {
+        font-weight: 500;
+    }
+
+    &.w400 {
+        font-weight: 400;
+    }
+}
+
+.input__cust {
+    border: none;
+    outline: none;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 15px;
+    width: 100%;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    color: #839B9F;
+
+    &::placeholder {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        color: #839B9F;
+    }
+
+    &:focus {
+        border-color: #40D5F0;
+    }
+
+    &.error {
+        border-color: #EE0A0A;
+    }
+}
+
+textarea.input__cust {
+    resize: none;
+    height: 160px;
+}
+
+.file__input {
+    display: flex;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: #40D5F0;
+    }
+
+    & input[type="file"] {
+        display: none;
+    }
+
+    &>p {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "Inter";
+        color: #839B9F;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        & img,
+        svg {
+            width: 12px;
+        }
+    }
+
+    &>img {
+        height: 50px;
+        width: auto;
+    }
+}
+
+.bg-grey {
+    background-color: #F9F9F9;
+}
+
+.bg-blue {
+    background-color: #40D5F0;
+}
+
+.card{
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px #00000005;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    & .card__text{
+        font-weight: 500;
+        font-size: 16px;
+        color: #333;
+        font-family: "Inter";
+    }
+}
