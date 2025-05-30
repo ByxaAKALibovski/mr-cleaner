@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/ui.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <h1 class="logo"><a href="index.html">mr. cleaner</a></h1>
+                <nav class="header__nav">
+                    <a href="services.html">услуги</a>
+                    <a href="about.html">компания</a>
+                    <a href="reviews.html">отзывы</a>
+                    <a href="contacts.html">контакты</a>
+                    <a href="blog.html">блог</a>
+                </nav>
+                <a href="#" class="btn" data-popup="login">Войти</a>
+            </div>
+        </header>
+        <main>
+            <section class="reviews__sec">
+                <div class="container">
+                    <h2 class="title__section">отзывы</h2>
+                    <div class="row bg-grey">
+                        <p class="text fz20">Мы благодарны нашим клиентам за оказанное доверие и положительные отзывы.
+                        </p><button class="btn" data-popup="add_reviews">Оставить отзыв</button>
+                    </div>
+                    <ul class="reviews__list">
+                        <li class="card card__reviews">
+                            <h3 class="name">Дмитрий Глазунов</h3>
+                            <p class="reviews">Уже более 4 лет являюсь постоянным клиентом клининговой компании MR.
+                                CLEANER, которая зарекомендовала себя только с лучшей стороны. Свою работу выполняют на
+                                5+, тыкать пальцем на недостатки не приходится. Рекомендую!</p>
+                        </li>
+                        <li class="card card__reviews">
+                            <h3 class="name">Инна Верещагина</h3>
+                            <p class="reviews">Здравствуйте, заказывала уборку в доме, в котором почти год никто не жил,
+                                персонал приехал вовремя, при этом позвонили заранее и уточнили информацию. Немного
+                                осталась пыль за холодильником, поэтому ставлю 4. Но в целом меня всё устроило.</p>
+                        </li>
+                        <li class="card card__reviews">
+                            <h3 class="name">Елена Матюшина</h3>
+                            <p class="reviews">Доброго времени суток, вот уже на протяжении 3-х лет наша семья является
+                                постоянным клиентом компании, заказываем разные услуги: химчистку дивана, стирку штор и
+                                даже уборку в квартире. Ребята выполняют свою работу на отлично. Рекомендую Вас всем
+                                друзьям и знакомым. </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="application__sec bg-blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="title__section title__section_reverse">
+                                Вызвать клининг <br> сэкономить
+                                <span>ваше время и силы</span>
+                            </h2>
+                            <p class="text fw-500">Заполните форму и менеджер свяжется с вами в ближайшее время</p>
+                        </div>
+                        <div class="column">
+                            <form action="add__application">
+                                <input type="text" name="name" placeholder="Ваше имя" class="input__cust" required>
+                                <input type="text" name="square" placeholder="Площадь помещения в кв.м."
+                                    class="input__cust" required>
+                                <input type="text" name="phone" placeholder="Контактный телефон" class="input__cust"
+                                    required>
+                                <input type="submit" value="Оставить заявку" class="btn btn__light">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <nav class="footer__nav">
+                        <a href="services.html">УСЛУГИ</a>
+                        <a href="about.html">КОМПАНИЯ</a>
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                        <a href="contact.html">КОНТАКТЫ</a>
+                        <a href="blog.html">блог</a>
+                    </nav>
+                    <address class="column">
+                        <a class="phone" href="tel: +7 (8412) 365-48-25">+7 (8412) 365-48-25</a>
+                        <div class="row">
+                            <div class="social__link">
+                                <a href="#" class="btn btn__icon"><img src="assets/media/icons/vk.png" alt="vk"></a>
+                                <a href="#" class="btn btn__icon"><img src="assets/media/icons/tg.png" alt="tg"></a>
+                            </div>
+                            <p class="text">НА СВЯЗИ: 9:00 - 20:00
+                                ВОСКРЕСЕНЬЕ - ВЫХОДНОЙ</p>
+                        </div>
+                        <p class="text">г.Пенза, ул. Генерала Глазунова 7, офис 3</p>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="display: flex; flex-direction: column; gap: 30px; padding: 30px; background-color: #e6e6e6;">
+
+    <div class="btn">Def button</div>
+    <div class="btn btn__revers">Revers button</div>
+    <div class="btn btn__light">Light button</div>
+    <div class="btn btn__text">Text button</div>
+    <div class="btn btn__icon"><img src="assets/media/icons/tg.png" alt="tg"></div>
+
+    <h2 class="title__section">
+        Title section <span>Title section span</span>
+    </h2>
+    <h3 class="title__big">Title big</h3>
+
+    <p class="text">Def text</p>
+    <p class="text fz20">Def text fz 20px</p>
+    <p class="text fz16">Def text fz 16px</p>
+    <p class="text fw500">Def text fw500</p>
+    <p class="text fw400">Def text fw400</p>
+
+    <input type="text" class="input__cust" placeholder="Input custom">
+    <textarea name="test" id="tset" placeholder="Textarea custom" class="input__cust"></textarea>
+    <label for="test_file" class="file__input">
+        <p>File block input <img src="assets/media/icons/Clip.svg" alt="Clip"></p>
+        <input type="file" name="test_file" id="test_file">
+    </label>
+
+    <div class="bg-grey">Background grey</div>
+    <div class="bg-blue">Background blue</div>
+
+    <div class="card">
+        <div class="title__calis">
+            <p class="top__text">01</p>
+            <p class="middle__text">Title calis</p>
+        </div>
+        <p class="text fw500 fz16">
+            Card  text - (.text .fw500 .fz16)
+        </p>
+    </div>
+    <div class="card__expert">
+        <img src="assets/media/image/expert/1.png" alt="expert">
+        <div class="text__block">
+            <h3>Card expert h3</h3>
+            <p>Card expert p</p>
+        </div>
+    </div>
+    <div class="card__article">
+        <img src="assets/media/temp/article/1.png" alt="article">
+        <h3 class="title__article">Card article h3</h3>
+    </div>
+    <div class="card card__reviews">
+        <h3 class="name">Card for Reviews</h3>
+        <p class="reviews">Text reviews</p>
+    </div>
+
+    <div class="btn" data-popup="test_popup">Open test popup</div>
+    <div class="popup" data-popup="test_popup">
+        <div class="over"></div>
+        <div class="main">
+            <h2 class="title__section">Popup window</h2>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

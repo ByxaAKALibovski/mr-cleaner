@@ -1,98 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/root.css" />
-    <link rel="stylesheet" href="assets/css/ui.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="assets/css/root.css" />
+  <link rel="stylesheet" href="assets/css/ui.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <h1 class="logo"><a href="index.html">mr. cleaner</a></h1>
+        <nav class="header__nav">
+          <a href="services.html">услуги</a>
+          <a href="about.html">компания</a>
+          <a href="reviews.html">отзывы</a>
+          <a href="contacts.html">контакты</a>
+          <a href="blog.html">блог</a>
+        </nav>
+        <a href="#" class="btn" data-popup="login">Войти</a>
+      </div>
+    </header>
+    <main>
+      <section class="start__screen">
         <div class="container">
-          <h1 class="logo"><a href="index.html">mr. cleaner</a></h1>
-          <nav class="header__nav">
-            <a href="services.html">услуги</a>
-            <a href="about.html">компания</a>
-            <a href="reviews.html">отзывы</a>
-            <a href="contacts.html">контакты</a>
+          <h2 class="title__big">Мы очищаем, вы расслабляетесь!</h2>
+          <p class="text fw400 fz20">
+            Пока вы занимаетесь чем-то важным, мы наведем порядок в <br> квартире,
+            частном доме или офисе, почистим мягкую мебель <br> и помоем окна.
+          </p>
+          <a href="#" class="btn">Выбрать уборку</a>
+        </div>
+      </section>
+      <section class="chois_as__sec">
+        <div class="container">
+          <h2 class="title__section">
+            Почему нам стоит доверить уборку <span>вашей квартиры</span>
+          </h2>
+          <ul class="chois_as__list">
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">01</p>
+                <p class="middle__text">Безопасно</p>
+              </div>
+              <p class="text fw500 fz16">
+                Во время уборки исползуем безопасные для здоровья моющие
+                средства
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">02</p>
+                <p class="middle__text">оперативно</p>
+              </div>
+              <p class="text fw500 fz16">
+                Приедем уже через 2 часа, уберем квартиру за 6-8 часов, полный
+                комплекс услуг
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">03</p>
+                <p class="middle__text">без предоплат</p>
+              </div>
+              <p class="text fw500 fz16">
+                Оплачиваете только по факту, никаких оплат до полного
+                выполнения работ
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">04</p>
+                <p class="middle__text">мастерски</p>
+              </div>
+              <p class="text fw500 fz16">
+                Используем лучшее оборудование и моющие средства высшего
+                качества
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="online_calc__sec">
+        <div class="container">
+
+        </div>
+      </section>
+      <section class="application__sec bg-blue">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <h2 class="title__section title__section_reverse">
+                Вызвать клининг <br> сэкономить
+                <span>ваше время и силы</span>
+              </h2>
+              <p class="text fw-500">Заполните форму и менеджер свяжется с вами в ближайшее время</p>
+            </div>
+            <div class="column">
+              <form action="add__application">
+                <input type="text" name="name" placeholder="Ваше имя" class="input__cust" required>
+                <input type="text" name="square" placeholder="Площадь помещения в кв.м." class="input__cust" required>
+                <input type="text" name="phone" placeholder="Контактный телефон" class="input__cust" required>
+                <input type="submit" value="Оставить заявку" class="btn btn__light">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="procedura_services__sec">
+        <div class="container">
+          <h2 class="title__section">
+            порядок оказания услуг <br>по уборке
+            <span>вашей квартиры</span>
+          </h2>
+          <ul class="procedura_services__list">
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">01</p>
+                <p class="middle__text"></p>
+              </div>
+              <p class="text fw500 fz16">
+                Звоните нам или оставляете заявку
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">02</p>
+                <p class="middle__text"></p>
+              </div>
+              <p class="text fw500 fz16">
+                Наш менеджер посчитает примерную стоимость всех работ
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">03</p>
+                <p class="middle__text"></p>
+              </div>
+              <p class="text fw500 fz16">
+                Согласуем дату, время и место, где требуется оказать услугу
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">04</p>
+                <p class="middle__text"></p>
+              </div>
+              <p class="text fw500 fz16">
+                В согласованный день уточняем, все ли в силе
+              </p>
+            </li>
+            <li class="card">
+              <div class="title__calis">
+                <p class="top__text">05</p>
+                <p class="middle__text"></p>
+              </div>
+              <p class="text fw500 fz16">
+                Вы уже принимаете готовую работу и оплачиваете
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq__sec">
+        <div class="container">
+          <h2 class="title__section">
+            часто задаваемые вопросы <br>и
+            <span>ответы на них</span>
+          </h2>
+          <ul class="faq__list">
+            <li class="faq_acardion__item active">
+              <div class="top__row">
+                <h3 class="questions">Как происходит оплата уборки? Нужна ли предоплата?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+            <li class="faq_acardion__item">
+              <div class="top__row">
+                <h3 class="questions">Что считается «труднодоступным» местом?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+            <li class="faq_acardion__item">
+              <div class="top__row">
+                <h3 class="questions">Есть ли у вас ограничения по минимальной стоимости заказа уборки?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+            <li class="faq_acardion__item">
+              <div class="top__row">
+                <h3 class="questions">Можно ли заказать клининг в выходные и праздники?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+            <li class="faq_acardion__item">
+              <div class="top__row">
+                <h3 class="questions">У меня есть домашний питомец. Как быть с уборкой?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+            <li class="faq_acardion__item">
+              <div class="top__row">
+                <h3 class="questions">Должен ли кто-то присутствовать в квартире, пока идёт уборка?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+            <li class="faq_acardion__item">
+              <div class="top__row">
+                <h3 class="questions">Что подготовить к приходу клинера?</h3>
+                <div class="cross"></div>
+              </div>
+              <div class="body">
+                <p>
+                  Расчет с юридическими лицами может производиться по безналичному расчету и наличными с частными
+                  лицами. С юридическими лицами работаем по предоплате. Но бывают ситуации, когда заказ срочный и
+                  провести оплату заказчик не успевает. Тогда можно внести залог, предоставить гарантийное письмо, и
+                  сотрудники нашей клининговой компании начнут работу. С физическими лицами работаем без предоплаты.
+                  Расчет производится после окончания и приемки результатов работ.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <nav class="footer__nav">
+            <a href="services.html">УСЛУГИ</a>
+            <a href="about.html">КОМПАНИЯ</a>
+            <a href="reviews.html">ОТЗЫВЫ</a>
+            <a href="contact.html">КОНТАКТЫ</a>
             <a href="blog.html">блог</a>
           </nav>
-          <a href="#" class="btn" data-popup="login">Войти</a>
-        </div>
-      </header>
-      <main>
-        <section class="start__screen">
-          <div class="container">
-            <h2 class="title__big">Мы очищаем, вы расслабляетесь!</h2>
-            <p class="text fw400 fz20">
-              Пока вы занимаетесь чем-то важным, мы наведем порядок в квартире,
-              частном доме или офисе, почистим мягкую мебель и помоем окна.
-            </p>
-            <a href="#" class="btn">Выбрать уборку</a>
-          </div>
-        </section>
-        <section class="chois_as__sec">
-          <div class="container">
-            <h2 class="title__section">
-              Почему нам стоит доверить уборку <span>вашей квартиры</span>
-            </h2>
-            <ul class="chois_as__list">
-              <li class="card">
-                <div class="title__calis">
-                  <p class="top__text">01</p>
-                  <p class="middle__text">Безопасно</p>
-                </div>
-                <p class="text fw500 fz16">
-                  Во время уборки исползуем безопасные для здоровья моющие
-                  средства
-                </p>
-              </li>
-              <li class="card">
-                <div class="title__calis">
-                  <p class="top__text">02</p>
-                  <p class="middle__text">оперативно</p>
-                </div>
-                <p class="text fw500 fz16">
-                  Приедем уже через 2 часа, уберем квартиру за 6-8 часов, полный
-                  комплекс услуг
-                </p>
-              </li>
-              <li class="card">
-                <div class="title__calis">
-                  <p class="top__text">03</p>
-                  <p class="middle__text">без предоплат</p>
-                </div>
-                <p class="text fw500 fz16">
-                  Оплачиваете только по факту, никаких оплат до полного
-                  выполнения работ
-                </p>
-              </li>
-              <li class="card">
-                <div class="title__calis">
-                  <p class="top__text">04</p>
-                  <p class="middle__text">мастерски</p>
-                </div>
-                <p class="text fw500 fz16">
-                  Используем лучшее оборудование и моющие средства высшего
-                  качества
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="online_calc__sec">
-            <div class="container">
-                
+          <address class="column">
+            <a class="phone" href="tel: +7 (8412) 365-48-25">+7 (8412) 365-48-25</a>
+            <div class="row">
+              <div class="social__link">
+                <a href="#" class="btn btn__icon"><img src="assets/media/icons/vk.png" alt="vk"></a>
+                <a href="#" class="btn btn__icon"><img src="assets/media/icons/tg.png" alt="tg"></a>
+              </div>
+              <p class="text">НА СВЯЗИ: 9:00 - 20:00
+                ВОСКРЕСЕНЬЕ - ВЫХОДНОЙ</p>
             </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-  </body>
+            <p class="text">г.Пенза, ул. Генерала Глазунова 7, офис 3</p>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

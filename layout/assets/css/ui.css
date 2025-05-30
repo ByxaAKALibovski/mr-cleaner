@@ -63,8 +63,15 @@
   }
 
   &.btn__icon {
+    display: flex;
     padding: 8px 23px;
     border-radius: 25px;
+
+    & img{
+      max-width: none;
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &.btn__text {
@@ -73,6 +80,7 @@
     border: none;
     border-bottom: 1px solid transparent;
     color: #40d5f0;
+    border-radius: 0;
 
     &:hover {
       border-color: #40d5f0;
@@ -90,12 +98,12 @@
   max-width: 480px;
   width: 100%;
 
-  & > span {
+  &>span {
     color: #40d5f0;
   }
 
   &.title__section_reverse {
-    & > span {
+    &>span {
       color: #fff;
     }
   }
@@ -185,7 +193,7 @@ textarea.input__cust {
     display: none;
   }
 
-  & > p {
+  &>p {
     font-weight: 400;
     font-size: 16px;
     font-family: "Inter";
@@ -200,7 +208,7 @@ textarea.input__cust {
     }
   }
 
-  & > img {
+  &>img {
     height: 50px;
     width: auto;
   }
@@ -225,13 +233,13 @@ textarea.input__cust {
   width: 100%;
   background-color: #FFF;
 
-  & > img {
+  &>img {
     display: block;
     height: 320px;
     width: auto;
   }
 
-  & > .text__block {
+  &>.text__block {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -240,13 +248,13 @@ textarea.input__cust {
     right: 60px;
     max-width: 163px;
 
-    & > h3 {
+    &>h3 {
       font-weight: 400;
       font-size: 20px;
       color: #333;
     }
 
-    & > p {
+    &>p {
       font-weight: 400;
       font-size: 16px;
       color: #333;
@@ -254,46 +262,249 @@ textarea.input__cust {
   }
 }
 
-.card{
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: 0 0 20px 5px #33333344;
+  border-radius: 10px;
+  background-color: #FFF;
+  gap: 16px;
+  max-width: 315px;
+  width: 100%;
+
+  &.card__reviews {
+    max-width: 425px;
+    gap: 30px;
+    justify-content: space-between;
+
+    & h3.name {
+      font-weight: 400;
+      font-size: 20px;
+      color: #333;
+    }
+
+    & p.reviews {
+      font-weight: 400;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+}
+
+.card__article {
+  display: flex;
+  align-items: end;
+  max-width: 648px;
+  width: 100%;
+  height: 397px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transform: scale(1);
+  transition: 0.3s;
+
+  &:hover{
+    transform: scale(0.95);
+    border-color: #40D5F0;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 0;
+  }
+
+  & h3.title__article {
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #40D5F0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+    margin-bottom: 27px;
+  }
+}
+
+.title__calis {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  & .top__text {
+    position: relative;
+    z-index: 0;
+    font-weight: 600;
+    font-size: 60px;
+    color: #EFEFEF;
+    margin-bottom: -36px;
+  }
+
+  & .middle__text {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    color: #333;
+  }
+
+  &::after {
+    content: "";
+    height: 2px;
+    max-width: 130px;
+    width: 100%;
+    background-color: #40d5f0;
+  }
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & .over {
+    position: absolute;
+    z-index: 10;
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    background-color: #33333341;
+  }
+
+  & .main {
+    position: relative;
+    z-index: 11;
+    max-width: 650px;
+    width: 100%;
+    border: 1px solid #40D5F0;
+    border-radius: 10px;
+    background-color: #FFF;
+    padding: 60px;
+  }
+}
+
+.faq__list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3px;
+
+  & li{
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 30px;
-    box-shadow: 0 0 20px 5px #33333344;
+    background-color: #F9F9F9;
     border-radius: 10px;
-    background-color: #FFF;
-    gap: 16px;
-    max-width: 315px;
-    width: 100%;
-}
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 15px transparent;
+    cursor: pointer;
+    transition: 0.3s;
 
-.title__calis{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    & .top__text{
-        position: relative;
-        z-index: 0;
-        font-weight: 600;
-        font-size: 60px;
-        color: #EFEFEF;
-        margin-bottom: -36px;
+    &.active{
+      background-color: #FFF;
     }
 
-    & .middle__text{
-        position: relative;
-        z-index: 1;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 30px;
-        color: #333;
+    &:not(.active):hover{
+      border-color: #40D5F0;
+    }
+    &:not(.active):hover .cross::after{
+      background-color: #40D5F0;
+    }
+    &:not(.active):hover .cross::before{
+      background-color: #40D5F0;
+    }
+    
+    & .top__row{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
     }
 
-    &::after{
+    & h3.questions{
+      font-weight: 600;
+      font-size: 20px;
+      color: #333;
+    }
+
+    & .cross{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 16px;
+      height: 16px;
+
+      &::after,&::before{
+        transition: 0.3s;
         content: "";
-        height: 2px;
-        max-width: 130px;
-        width: 100%;
-        background-color: #40d5f0;
+        position: absolute;
+        width: 16px;
+        height: 1px;
+        background-color: #839B9F; 
+      }
+
+      &::after{
+        transform: rotate(90deg);
+      }
     }
+    &.active .cross{
+      &::after,&::before{
+        transition: 0.3s;
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 1px;
+        background-color: #40D5F0; 
+      }
+
+      &::after{
+        transform: rotate(45deg);
+      }
+      &::before{
+        transform: rotate(-45deg);
+      }
+    }
+
+    & .body{
+      display: none;
+      transition: 0.4s;
+    }
+    &.active .body{
+      padding-top: 20px;
+      display: flex;
+
+      & p{
+        font-weight: 400;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+
+    &.active{
+      box-shadow: 0px 0px 15px #33333315;
+    }
+  }
 }
